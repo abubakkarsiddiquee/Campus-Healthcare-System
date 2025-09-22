@@ -89,7 +89,7 @@ const Forum = () => {
               Forum
             </a>
             <a href="#" className="text-gray-600 hover:text-blue-700">Q&A</a>
-            <a href="#" className="text-gray-600 hover:text-blue-700">Appointments</a>
+            <a href="/appointments" className="text-gray-600 hover:text-blue-700">Appointments</a>
             <a href="#" className="text-gray-600 hover:text-blue-700">Symptom Checker</a>
             <a href="#" className="text-gray-600 hover:text-blue-700">Tracker</a>
             <a href="#" className="text-red-500 hover:text-red-700 font-semibold">
