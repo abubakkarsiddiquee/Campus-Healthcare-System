@@ -73,25 +73,25 @@ const Forum = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-pink-50 font-sans text-gray-800">
+    <div className="min-h-screen bg-white font-sans text-gray-900">
       {/* Header */}
       <header className="bg-white shadow-sm py-4 px-8 flex justify-between items-center">
         <div className="flex items-center space-x-6">
-          <h1 className="font-bold text-xl text-pink-700">
+          <h1 className="font-bold text-xl text-blue-700">
             Campus Health Connect
           </h1>
           <nav className="hidden md:flex space-x-4">
-            <a href="/" className="text-gray-600 hover:text-pink-700">Home</a>
+            <a href="/" className="text-gray-600 hover:text-blue-700">Home</a>
             <a
               href="/forum"
-              className="font-semibold text-pink-700 border-b-2 border-pink-700 pb-1"
+              className="font-semibold text-blue-700 border-b-2 border-blue-700 pb-1"
             >
               Forum
             </a>
-            <a href="#" className="text-gray-600 hover:text-pink-700">Q&A</a>
-            <a href="#" className="text-gray-600 hover:text-pink-700">Appointments</a>
-            <a href="#" className="text-gray-600 hover:text-pink-700">Symptom Checker</a>
-            <a href="#" className="text-gray-600 hover:text-pink-700">Tracker</a>
+            <a href="#" className="text-gray-600 hover:text-blue-700">Q&A</a>
+            <a href="#" className="text-gray-600 hover:text-blue-700">Appointments</a>
+            <a href="#" className="text-gray-600 hover:text-blue-700">Symptom Checker</a>
+            <a href="#" className="text-gray-600 hover:text-blue-700">Tracker</a>
             <a href="#" className="text-red-500 hover:text-red-700 font-semibold">
               Emergency
             </a>
@@ -105,7 +105,7 @@ const Forum = () => {
       {/* Main */}
       <main className="container mx-auto px-4 py-10">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold text-pink-700 mb-2">
+          <h2 className="text-3xl font-bold text-blue-700 mb-2">
             Discussion Forum
           </h2>
           <p className="text-gray-600">
@@ -122,8 +122,8 @@ const Forum = () => {
                 onClick={() => setActiveTab(tab)}
                 className={`px-4 py-2 rounded-full text-sm font-semibold transition ${
                   activeTab === tab
-                    ? 'bg-pink-600 text-white'
-                    : 'text-gray-600 hover:bg-pink-100'
+                    ? 'bg-blue-600 text-white'
+                    : 'text-gray-600 hover:bg-blue-100'
                 }`}
               >
                 {tab}
@@ -144,11 +144,11 @@ const Forum = () => {
                 className="bg-white rounded-lg p-6 shadow hover:shadow-lg transition"
               >
                 <div className="flex items-start space-x-4 mb-4">
-                  <div className="flex-shrink-0 w-10 h-10 bg-pink-200 rounded-full flex items-center justify-center font-bold text-pink-700">
+                  <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-700">
                     {d.userInitials}
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-pink-700">
+                    <h3 className="text-lg font-semibold text-blue-700">
                       {d.title}
                     </h3>
                     <p className="text-sm text-gray-500">
@@ -163,7 +163,7 @@ const Forum = () => {
                   {d.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="bg-pink-100 text-pink-700 text-xs font-medium px-2 py-1 rounded-full"
+                      className="bg-blue-50 text-blue-700 text-xs font-medium px-2 py-1 rounded-full"
                     >
                       #{tag}
                     </span>
@@ -176,7 +176,7 @@ const Forum = () => {
                   </div>
                   <a
                     href="#"
-                    className="font-semibold text-pink-600 hover:text-pink-800"
+                    className="font-semibold text-blue-600 hover:text-blue-800"
                   >
                     Join Discussion →
                   </a>
@@ -189,28 +189,28 @@ const Forum = () => {
           <div className="space-y-6">
             {/* Quick Post */}
             <div className="bg-white rounded-lg p-6 shadow">
-              <h4 className="text-lg font-semibold text-pink-700 mb-4">
+              <h4 className="text-lg font-semibold text-blue-700 mb-4">
                 Quick Post
               </h4>
               <textarea
-                className="w-full h-24 p-2 border border-pink-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
+                className="w-full h-24 p-2 border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Share something..."
               ></textarea>
-              <button className="w-full mt-4 py-2 bg-pink-600 text-white font-semibold rounded-lg hover:bg-pink-700 transition">
+              <button className="w-full mt-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
                 Post
               </button>
             </div>
 
             {/* Popular Topics */}
             <div className="bg-white rounded-lg p-6 shadow">
-              <h4 className="text-lg font-semibold text-pink-700 mb-4">
+              <h4 className="text-lg font-semibold text-blue-700 mb-4">
                 Popular Topics
               </h4>
               <div className="flex flex-wrap gap-2">
                 {popularTopics.map((topic) => (
                   <span
                     key={topic}
-                    className="bg-pink-100 text-pink-700 text-sm px-3 py-1 rounded-full cursor-pointer hover:bg-pink-200"
+                    className="bg-blue-50 text-blue-700 text-sm px-3 py-1 rounded-full cursor-pointer hover:bg-blue-200"
                   >
                     #{topic}
                   </span>
@@ -220,7 +220,7 @@ const Forum = () => {
 
             {/* Recommended */}
             <div className="bg-white rounded-lg p-6 shadow">
-              <h4 className="text-lg font-semibold text-pink-700 mb-2">
+              <h4 className="text-lg font-semibold text-blue-700 mb-2">
                 Recommended for You
               </h4>
               <p className="text-sm text-gray-500 mb-4">
@@ -238,8 +238,8 @@ const Forum = () => {
                     <button
                       className={`text-xs px-3 py-1 rounded-full font-semibold ${
                         item.progress
-                          ? 'bg-pink-100 text-pink-700'
-                          : 'bg-pink-600 text-white hover:bg-pink-700'
+                          ? 'bg-blue-50 text-blue-700'
+                          : 'bg-blue-600 text-white hover:bg-blue-700'
                       }`}
                     >
                       {item.actionText}
@@ -249,9 +249,9 @@ const Forum = () => {
                     {item.description}
                   </p>
                   {item.progress && (
-                    <div className="relative h-2 w-full bg-pink-100 rounded-full">
+                    <div className="relative h-2 w-full bg-blue-50 rounded-full">
                       <div
-                        className="h-2 rounded-full bg-pink-600"
+                        className="h-2 rounded-full bg-blue-600"
                         style={{ width: `${item.progressValue}%` }}
                       ></div>
                     </div>
