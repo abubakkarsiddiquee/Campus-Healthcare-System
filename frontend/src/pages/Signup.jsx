@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { api } from "../api";
-import signupImg from "../assets/signup.jpg";
+// import signupImg from "../assets/signup.jpg";
 
 export default function Signup() {
   const [step, setStep] = useState(1);
@@ -56,26 +56,26 @@ export default function Signup() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-pink-50 font-sans p-4">
+    <div className="min-h-screen flex items-center justify-center bg-blue-400 font-sans p-4">
       <div className="w-full max-w-6xl bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
-        {/* Image */}
+        {/* Image
         <div className="w-full md:w-1/2 h-64 md:h-auto">
           <img
             src={signupImg}
             alt="Signup"
             className="w-full h-full object-cover"
           />
-        </div>
+        </div> */}
 
         {/* Form */}
         <div className="w-full md:w-1/2 p-6 md:p-8 flex flex-col justify-center">
           {/* Step 1: Role */}
           {step === 1 && (
             <div>
-              <h2 className="text-2xl font-bold text-pink-700 mb-6 text-center md:text-left">
+              <h2 className="text-2xl font-bold text-blue-400 mb-6 text-center md:text-left">
                 Join Campus Health Connect
               </h2>
-              <p className="mb-4 text-pink-600 text-center md:text-left">
+              <p className="mb-4 text-blue-400 text-center md:text-left">
                 Select your role:
               </p>
               <div className="space-y-3">
@@ -86,8 +86,8 @@ export default function Signup() {
                       onClick={() => setRole(r)}
                       className={`w-full py-2 rounded-lg border text-pink-700 font-semibold ${
                         role === r
-                          ? "bg-pink-600 text-white"
-                          : "bg-white hover:bg-pink-100"
+                          ? "bg-blue-500 text-white"
+                          : "bg-white hover:bg-blue-100"
                       } transition`}
                     >
                       {r}
@@ -99,11 +99,11 @@ export default function Signup() {
                 <button
                   onClick={handleNext}
                   disabled={!role}
-                  className="px-4 py-2 bg-pink-600 text-white rounded-lg font-semibold disabled:bg-pink-300 w-full sm:w-auto"
+                  className="px-4 py-2 bg-blue-400 text-white rounded-lg font-semibold disabled:bg-pink-300 w-full sm:w-auto"
                 >
                   Continue
                 </button>
-                <a href="/login" className="text-pink-600 hover:underline">
+                <a href="/login" className="text-blue-500 hover:underline">
                   Already have an account?
                 </a>
               </div>

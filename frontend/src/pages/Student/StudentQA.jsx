@@ -29,8 +29,12 @@ const StudentQA = () => {
                     <div className="flex justify-between items-center h-16">
                         {/* Logo */}
                         <div className="flex items-center">
-                            <Heart className="h-8 w-8 text-blue-600 mr-2" />
-                            <span className="text-xl font-semibold text-gray-900">Campus Health Connect</span>
+                        <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
+                            <span className="text-white font-bold text-sm">CHC</span>
+                        </div>
+                        <span className="ml-3 text-xl font-semibold text-gray-900">
+                            Campus Health Connect
+                        </span>
                         </div>
 
                         {/* Navigation Links */}
@@ -41,7 +45,7 @@ const StudentQA = () => {
                             <a href="#" className="text-gray-600 hover:text-gray-900">Appointments</a>
                             <a href="#" className="text-gray-600 hover:text-gray-900">Symptom Checker</a>
                             <a href="#" className="text-gray-600 hover:text-gray-900">Directory</a>
-                            <a href="#" className="text-gray-600 hover:text-gray-900">Tracker</a>
+                            {/* <a href="#" className="text-gray-600 hover:text-gray-900">Tracker</a> */}
                             <a href="#" className="text-red-600 hover:text-red-700">Emergency</a>
                         </nav>
 
