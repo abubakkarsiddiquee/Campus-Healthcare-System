@@ -86,21 +86,21 @@ const Appointments = () => {
      {/* Header */}
       <header className="bg-white shadow-sm py-4 px-8 flex justify-between items-center">
         <div className="flex items-center space-x-6">
-          <h1 className="font-bold text-xl text-blue-700">
-            Campus Health Connect
+          <h1 className="font-bold text-xl text-uiu-orange">
+            UIU Health Connect
           </h1>
           <nav className="hidden md:flex space-x-4">
-            <a href="/" className="text-gray-600 hover:text-blue-700">Home</a>
-            <a href="/forum" className="text-gray-600 hover:text-blue-700">Forum</a>
-            <a href="#" className="text-gray-600 hover:text-blue-700">Q&A</a>
+            <a href="/" className="text-gray-600 hover:text-uiu-orange">Home</a>
+            <a href="/forum" className="text-gray-600 hover:text-uiu-orange">Forum</a>
+            <a href="#" className="text-gray-600 hover:text-uiu-orange">Q&A</a>
             <a
               href="#"
-              className="font-semibold text-blue-700 border-b-2 border-blue-700 pb-1"
+              className="font-semibold text-uiu-orange border-b-2 border-uiu-orange pb-1"
             >
               Appointments
             </a>
-            <a href="#" className="text-gray-600 hover:text-blue-700">Symptom Checker</a>
-            <a href="#" className="text-gray-600 hover:text-blue-700">Tracker</a>
+            <a href="#" className="text-gray-600 hover:text-uiu-orange">Symptom Checker</a>
+            <a href="#" className="text-gray-600 hover:text-uiu-orange">Tracker</a>
             <a href="#" className="text-red-500 hover:text-red-700 font-semibold">
               Emergency
             </a>
@@ -127,7 +127,7 @@ const Appointments = () => {
                   <select
                     value={selectedService}
                     onChange={e => { handleSelect(setSelectedService)(e.target.value); setSelectedProvider(''); }}
-                    className="w-full p-3 pl-12 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 appearance-none transition-shadow"
+                    className="w-full p-3 pl-12 rounded-lg border border-gray-300 focus:ring-2 focus:ring-uiu-orange focus:border-uiu-orange appearance-none transition-shadow"
                   >
                     <option value="">Choose a service</option>
                     {mockServices.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
@@ -144,7 +144,7 @@ const Appointments = () => {
                     value={selectedProvider}
                     onChange={e => handleSelect(setSelectedProvider)(e.target.value)}
                     disabled={!selectedService}
-                    className="w-full p-3 pl-12 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 appearance-none transition-shadow"
+                    className="w-full p-3 pl-12 rounded-lg border border-gray-300 focus:ring-2 focus:ring-uiu-orange focus:border-uiu-orange appearance-none transition-shadow"
                   >
                     <option value="">Choose a provider</option>
                     {filteredProviders.map(p => <option key={p.id} value={p.id}>{p.name}</option>)}
@@ -178,8 +178,8 @@ const Appointments = () => {
                           disabled={!day}
                           className={twMerge(
                             "w-10 h-10 flex items-center justify-center rounded-full text-gray-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed",
-                            day && "hover:bg-indigo-100",
-                            day === selectedDate ? 'bg-indigo-600 text-white hover:bg-indigo-600' :
+                            day && "hover:bg-uiu-light",
+                            day === selectedDate ? 'bg-uiu-orange text-white hover:bg-uiu-orange' :
                             isToday(day) ? 'bg-black text-white' : 'bg-white'
                           )}
                         >
@@ -199,8 +199,8 @@ const Appointments = () => {
                         key={time}
                         onClick={() => handleSelect(setSelectedTime)(time)}
                         className={twMerge(
-                          "bg-white text-gray-800 p-3 rounded-lg border border-gray-300 transition-colors hover:bg-indigo-50",
-                          selectedTime === time && 'bg-indigo-100 text-indigo-700 font-semibold border-indigo-500'
+                          "bg-white text-gray-800 p-3 rounded-lg border border-gray-300 transition-colors hover:bg-uiu-light",
+                          selectedTime === time && 'bg-uiu-light text-uiu-orange font-semibold border-uiu-orange'
                         )}
                       >
                         {time}
@@ -218,7 +218,7 @@ const Appointments = () => {
                     "w-full py-4 px-6 rounded-xl text-lg shadow-md font-bold transition-colors",
                     (!selectedService || !selectedProvider || !selectedDate || !selectedTime)
                       ? "bg-gray-400 cursor-not-allowed"
-                      : "bg-indigo-600 text-white hover:bg-indigo-700"
+                      : "bg-uiu-orange text-white hover:bg-uiu-dark"
                   )}
                 >
                   Book Appointment

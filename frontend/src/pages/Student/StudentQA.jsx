@@ -29,23 +29,22 @@ const StudentQA = () => {
                     <div className="flex justify-between items-center h-16">
                         {/* Logo */}
                         <div className="flex items-center">
-                        <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
-                            <span className="text-white font-bold text-sm">CHC</span>
-                        </div>
-                        <span className="ml-3 text-xl font-semibold text-gray-900">
-                            Campus Health Connect
-                        </span>
+                            <div className="w-8 h-8 bg-uiu-orange rounded-lg flex items-center justify-center">
+                                <span className="text-white font-bold text-sm">CHC</span>
+                            </div>
+                            <span className="ml-3 text-xl font-semibold text-gray-900">
+                                Campus Health Connect
+                            </span>
                         </div>
 
                         {/* Navigation Links */}
                         <nav className="hidden md:flex space-x-8">
-                            <a href="#" className="text-gray-600 hover:text-gray-900">Home</a>
-                            <a href="#" className="text-gray-600 hover:text-gray-900">Forum</a>
-                            <a href="#" className="text-blue-600 font-medium border-b-2 border-blue-600 pb-2">Q&A</a>
-                            <a href="#" className="text-gray-600 hover:text-gray-900">Appointments</a>
-                            <a href="#" className="text-gray-600 hover:text-gray-900">Symptom Checker</a>
-                            <a href="#" className="text-gray-600 hover:text-gray-900">Directory</a>
-                            {/* <a href="#" className="text-gray-600 hover:text-gray-900">Tracker</a> */}
+                            <a href="#" className="text-gray-600 hover:text-uiu-orange">Home</a>
+                            <a href="#" className="text-gray-600 hover:text-uiu-orange">Forum</a>
+                            <a href="#" className="text-uiu-orange font-medium border-b-2 border-uiu-orange pb-2">Q&A</a>
+                            <a href="#" className="text-gray-600 hover:text-uiu-orange">Appointments</a>
+                            <a href="#" className="text-gray-600 hover:text-uiu-orange">Symptom Checker</a>
+                            <a href="#" className="text-gray-600 hover:text-uiu-orange">Directory</a>
                             <a href="#" className="text-red-600 hover:text-red-700">Emergency</a>
                         </nav>
 
@@ -68,7 +67,7 @@ const StudentQA = () => {
                 {/* Page Header */}
                 <div className="mb-8">
                     <div className="flex items-center space-x-2 mb-2">
-                        <HelpCircle className="h-6 w-6 text-gray-600" />
+                        <HelpCircle className="h-6 w-6 text-uiu-orange" />
                         <h1 className="text-2xl font-bold text-gray-900">Q&A Sessions</h1>
                     </div>
                     <p className="text-gray-600">Ask questions and get expert answers from healthcare professionals and counselors</p>
@@ -76,7 +75,7 @@ const StudentQA = () => {
 
                 {/* Schedule Q&A Session Button */}
                 <div className="mb-8 flex justify-end">
-                    <button className="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors">
+                    <button className="bg-uiu-orange text-white px-4 py-2 rounded-lg hover:bg-uiu-dark transition-colors">
                         Schedule Q&A Session
                     </button>
                 </div>
@@ -100,7 +99,7 @@ const StudentQA = () => {
                                     <div className="flex items-center space-x-2">
                                         <Clock className="h-4 w-4" />
                                         <span>Today, 3:00 PM</span>
-                                        <span className="text-xs bg-gray-100 px-2 py-1 rounded">60 minutes</span>
+                                        <span className="text-xs bg-uiu-light text-uiu-dark px-2 py-1 rounded">60 minutes</span>
                                     </div>
                                     <div className="flex items-center space-x-2">
                                         <Users className="h-4 w-4" />
@@ -111,7 +110,7 @@ const StudentQA = () => {
                                 </div>
                             </div>
 
-                            <button className="w-full bg-gray-900 text-white py-2 px-4 rounded-lg hover:bg-gray-800 transition-colors">
+                            <button className="w-full bg-uiu-orange text-white py-2 px-4 rounded-lg hover:bg-uiu-dark transition-colors">
                                 Join Live Session
                             </button>
                         </div>
@@ -129,7 +128,7 @@ const StudentQA = () => {
                                     <div className="flex items-center space-x-2">
                                         <Clock className="h-4 w-4" />
                                         <span>Tomorrow, 2:00 PM</span>
-                                        <span className="text-xs bg-gray-100 px-2 py-1 rounded">45 minutes</span>
+                                        <span className="text-xs bg-uiu-light text-uiu-dark px-2 py-1 rounded">45 minutes</span>
                                     </div>
                                     <div className="flex items-center space-x-2">
                                         <Users className="h-4 w-4" />
@@ -140,7 +139,7 @@ const StudentQA = () => {
                                 </div>
                             </div>
 
-                            <button className="w-full bg-white text-gray-900 border border-gray-300 py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors">
+                            <button className="w-full bg-white text-uiu-orange border border-uiu-orange py-2 px-4 rounded-lg hover:bg-uiu-light transition-colors">
                                 Register for Session
                             </button>
                         </div>
@@ -158,7 +157,7 @@ const StudentQA = () => {
                                     <div className="flex items-center space-x-2">
                                         <Clock className="h-4 w-4" />
                                         <span>Friday, 4:00 PM</span>
-                                        <span className="text-xs bg-gray-100 px-2 py-1 rounded">50 minutes</span>
+                                        <span className="text-xs bg-uiu-light text-uiu-dark px-2 py-1 rounded">50 minutes</span>
                                     </div>
                                     <div className="flex items-center space-x-2">
                                         <Users className="h-4 w-4" />
@@ -169,7 +168,7 @@ const StudentQA = () => {
                                 </div>
                             </div>
 
-                            <button className="w-full bg-white text-gray-900 border border-gray-300 py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors">
+                            <button className="w-full bg-white text-uiu-orange border border-uiu-orange py-2 px-4 rounded-lg hover:bg-uiu-light transition-colors">
                                 Register for Session
                             </button>
                         </div>
@@ -186,7 +185,7 @@ const StudentQA = () => {
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Your question...</label>
                                 <textarea
-                                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-gray-50"
+                                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-uiu-orange focus:border-transparent bg-gray-50"
                                     rows="4"
                                     placeholder="Type your question here..."
                                 ></textarea>
@@ -196,7 +195,7 @@ const StudentQA = () => {
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Select Category</label>
                                 <div className="relative">
                                     <select
-                                        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-gray-50"
+                                        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-uiu-orange focus:border-transparent appearance-none bg-gray-50"
                                         value={selectedCategory}
                                         onChange={(e) => setSelectedCategory(e.target.value)}
                                     >
@@ -216,7 +215,7 @@ const StudentQA = () => {
                                 <label htmlFor="anonymous" className="text-sm text-gray-600">Submit anonymously</label>
                             </div>
 
-                            <button className="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-colors">
+                            <button className="bg-uiu-orange text-white px-6 py-2 rounded-lg hover:bg-uiu-dark transition-colors">
                                 Submit Question
                             </button>
                         </div>
@@ -233,12 +232,12 @@ const StudentQA = () => {
                                 <input
                                     type="text"
                                     placeholder="Search questions..."
-                                    className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-gray-50"
+                                    className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-uiu-orange focus:border-transparent bg-gray-50"
                                     value={searchQuery}
                                     onChange={(e) => setSearchQuery(e.target.value)}
                                 />
                             </div>
-                            <button className="flex items-center space-x-2 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
+                            <button className="flex items-center space-x-2 px-4 py-2 border border-uiu-orange text-uiu-orange rounded-lg hover:bg-uiu-light">
                                 <Filter className="h-4 w-4" />
                                 <span>Filter</span>
                             </button>
@@ -258,7 +257,7 @@ const StudentQA = () => {
                                 <span className="text-sm text-gray-500">2 hours ago</span>
                             </div>
 
-                            <div className="bg-gray-50 p-4 rounded-lg mb-4">
+                            <div className="bg-uiu-light p-4 rounded-lg mb-4">
                                 <p className="text-gray-700">
                                     Start with breathing exercises and break study sessions into smaller chunks. Consider reaching out to campus counseling services for additional support.
                                 </p>
@@ -266,12 +265,12 @@ const StudentQA = () => {
 
                             <div className="flex items-center justify-between">
                                 <div className="flex items-center space-x-4">
-                                    <button className="flex items-center space-x-2 text-gray-600 hover:text-blue-600">
+                                    <button className="flex items-center space-x-2 text-gray-600 hover:text-uiu-orange">
                                         <ThumbsUp className="h-4 w-4" />
                                         <span className="text-sm">24 helpful</span>
                                     </button>
                                 </div>
-                                <button className="flex items-center space-x-2 text-blue-600 hover:text-blue-700">
+                                <button className="flex items-center space-x-2 text-uiu-orange hover:text-uiu-dark">
                                     <MessageSquare className="h-4 w-4" />
                                     <span className="text-sm">Follow up</span>
                                 </button>
@@ -290,7 +289,7 @@ const StudentQA = () => {
                                 <span className="text-sm text-gray-500">1 day ago</span>
                             </div>
 
-                            <div className="bg-gray-50 p-4 rounded-lg mb-4">
+                            <div className="bg-uiu-light p-4 rounded-lg mb-4">
                                 <p className="text-gray-700">
                                     Try nuts, yogurt with berries, or whole grain crackers with hummus. Avoid heavy meals and excessive caffeine late at night.
                                 </p>
@@ -298,12 +297,12 @@ const StudentQA = () => {
 
                             <div className="flex items-center justify-between">
                                 <div className="flex items-center space-x-4">
-                                    <button className="flex items-center space-x-2 text-gray-600 hover:text-blue-600">
+                                    <button className="flex items-center space-x-2 text-gray-600 hover:text-uiu-orange">
                                         <ThumbsUp className="h-4 w-4" />
                                         <span className="text-sm">18 helpful</span>
                                     </button>
                                 </div>
-                                <button className="flex items-center space-x-2 text-blue-600 hover:text-blue-700">
+                                <button className="flex items-center space-x-2 text-uiu-orange hover:text-uiu-dark">
                                     <MessageSquare className="h-4 w-4" />
                                     <span className="text-sm">Follow up</span>
                                 </button>
@@ -320,7 +319,7 @@ const StudentQA = () => {
                         {/* Logo and Description */}
                         <div className="md:col-span-1">
                             <div className="flex items-center mb-4">
-                                <Heart className="h-6 w-6 text-blue-600 mr-2" />
+                                <Heart className="h-6 w-6 text-uiu-orange mr-2" />
                                 <span className="text-lg font-semibold text-gray-900">Campus Health Connect</span>
                             </div>
                             <p className="text-sm text-gray-600 mb-4">
@@ -337,10 +336,10 @@ const StudentQA = () => {
                         <div>
                             <h3 className="text-sm font-semibold text-gray-900 mb-4">Features</h3>
                             <ul className="space-y-2 text-sm text-gray-600">
-                                <li><a href="#" className="hover:text-gray-900">Discussion Forum</a></li>
-                                <li><a href="#" className="hover:text-gray-900">Q&A Sessions</a></li>
-                                <li><a href="#" className="hover:text-gray-900">Appointments</a></li>
-                                <li><a href="#" className="hover:text-gray-900">Symptom Checker</a></li>
+                                <li><a href="#" className="hover:text-uiu-orange">Discussion Forum</a></li>
+                                <li><a href="#" className="hover:text-uiu-orange">Q&A Sessions</a></li>
+                                <li><a href="#" className="hover:text-uiu-orange">Appointments</a></li>
+                                <li><a href="#" className="hover:text-uiu-orange">Symptom Checker</a></li>
                             </ul>
                         </div>
 
@@ -348,10 +347,10 @@ const StudentQA = () => {
                         <div>
                             <h3 className="text-sm font-semibold text-gray-900 mb-4">Resources</h3>
                             <ul className="space-y-2 text-sm text-gray-600">
-                                <li><a href="#" className="hover:text-gray-900">Health Resources</a></li>
-                                <li><a href="#" className="hover:text-gray-900">Provider Directory</a></li>
-                                <li><a href="#" className="hover:text-gray-900">Health Tracker</a></li>
-                                <li><a href="#" className="hover:text-gray-900">Community Posts</a></li>
+                                <li><a href="#" className="hover:text-uiu-orange">Health Resources</a></li>
+                                <li><a href="#" className="hover:text-uiu-orange">Provider Directory</a></li>
+                                <li><a href="#" className="hover:text-uiu-orange">Health Tracker</a></li>
+                                <li><a href="#" className="hover:text-uiu-orange">Community Posts</a></li>
                             </ul>
                         </div>
 
@@ -371,7 +370,7 @@ const StudentQA = () => {
                     {/* Bottom Copyright */}
                     <div className="border-t mt-8 pt-8 flex justify-between items-center">
                         <p className="text-sm text-gray-500">© 2024 Campus Health Connect. All rights reserved.</p>
-                        <a href="#" className="text-sm text-gray-600 hover:text-gray-900">Contact</a>
+                        <a href="#" className="text-sm text-gray-600 hover:text-uiu-orange">Contact</a>
                     </div>
                 </div>
             </footer>

@@ -73,26 +73,26 @@ const Forum = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-gray-900">
+    <div className="min-h-screen bg-[#F9FAFB] font-sans text-gray-900">
       {/* Header */}
       <header className="bg-white shadow-sm py-4 px-8 flex justify-between items-center">
         <div className="flex items-center space-x-6">
-          <h1 className="font-bold text-xl text-blue-700">
+          <h1 className="font-bold text-xl text-[#FF6B00]">
             Campus Health Connect
           </h1>
           <nav className="hidden md:flex space-x-4">
-            <a href="/" className="text-gray-600 hover:text-blue-700">Home</a>
+            <a href="/" className="text-gray-600 hover:text-[#FF6B00]">Home</a>
             <a
               href="/forum"
-              className="font-semibold text-blue-700 border-b-2 border-blue-700 pb-1"
+              className="font-semibold text-[#FF6B00] border-b-2 border-[#FF6B00] pb-1"
             >
               Forum
             </a>
-            <a href="#" className="text-gray-600 hover:text-blue-700">Q&A</a>
-            <a href="/appointments" className="text-gray-600 hover:text-blue-700">Appointments</a>
-            <a href="#" className="text-gray-600 hover:text-blue-700">Symptom Checker</a>
-            <a href="#" className="text-gray-600 hover:text-blue-700">Tracker</a>
-            <a href="#" className="text-red-500 hover:text-red-700 font-semibold">
+            <a href="#" className="text-gray-600 hover:text-[#FF6B00]">Q&A</a>
+            <a href="/appointments" className="text-gray-600 hover:text-[#FF6B00]">Appointments</a>
+            <a href="#" className="text-gray-600 hover:text-[#FF6B00]">Symptom Checker</a>
+            <a href="#" className="text-gray-600 hover:text-[#FF6B00]">Tracker</a>
+            <a href="#" className="text-[#DC3545] hover:text-[#C82333] font-semibold">
               Emergency
             </a>
           </nav>
@@ -105,7 +105,7 @@ const Forum = () => {
       {/* Main */}
       <main className="container mx-auto px-4 py-10">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold text-blue-700 mb-2">
+          <h2 className="text-3xl font-bold text-[#FF6B00] mb-2">
             Discussion Forum
           </h2>
           <p className="text-gray-600">
@@ -122,8 +122,8 @@ const Forum = () => {
                 onClick={() => setActiveTab(tab)}
                 className={`px-4 py-2 rounded-full text-sm font-semibold transition ${
                   activeTab === tab
-                    ? 'bg-blue-600 text-white'
-                    : 'text-gray-600 hover:bg-blue-100'
+                    ? 'bg-[#FF6B00] text-white'
+                    : 'text-gray-600 hover:bg-[#FF8C42]/20'
                 }`}
               >
                 {tab}
@@ -144,11 +144,11 @@ const Forum = () => {
                 className="bg-white rounded-lg p-6 shadow hover:shadow-lg transition"
               >
                 <div className="flex items-start space-x-4 mb-4">
-                  <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-700">
+                  <div className="flex-shrink-0 w-10 h-10 bg-[#FF8C42]/20 rounded-full flex items-center justify-center font-bold text-[#FF6B00]">
                     {d.userInitials}
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-blue-700">
+                    <h3 className="text-lg font-semibold text-[#FF6B00]">
                       {d.title}
                     </h3>
                     <p className="text-sm text-gray-500">
@@ -163,7 +163,7 @@ const Forum = () => {
                   {d.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="bg-blue-50 text-blue-700 text-xs font-medium px-2 py-1 rounded-full"
+                      className="bg-[#FF8C42]/10 text-[#FF6B00] text-xs font-medium px-2 py-1 rounded-full"
                     >
                       #{tag}
                     </span>
@@ -176,7 +176,7 @@ const Forum = () => {
                   </div>
                   <a
                     href="#"
-                    className="font-semibold text-blue-600 hover:text-blue-800"
+                    className="font-semibold text-[#FF6B00] hover:text-[#FF8C42]"
                   >
                     Join Discussion →
                   </a>
@@ -189,28 +189,28 @@ const Forum = () => {
           <div className="space-y-6">
             {/* Quick Post */}
             <div className="bg-white rounded-lg p-6 shadow">
-              <h4 className="text-lg font-semibold text-blue-700 mb-4">
+              <h4 className="text-lg font-semibold text-[#FF6B00] mb-4">
                 Quick Post
               </h4>
               <textarea
-                className="w-full h-24 p-2 border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full h-24 p-2 border border-[#FF8C42]/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF6B00]"
                 placeholder="Share something..."
               ></textarea>
-              <button className="w-full mt-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+              <button className="w-full mt-4 py-2 bg-[#FF6B00] text-white font-semibold rounded-lg hover:bg-[#FF8C42] transition">
                 Post
               </button>
             </div>
 
             {/* Popular Topics */}
             <div className="bg-white rounded-lg p-6 shadow">
-              <h4 className="text-lg font-semibold text-blue-700 mb-4">
+              <h4 className="text-lg font-semibold text-[#FF6B00] mb-4">
                 Popular Topics
               </h4>
               <div className="flex flex-wrap gap-2">
                 {popularTopics.map((topic) => (
                   <span
                     key={topic}
-                    className="bg-blue-50 text-blue-700 text-sm px-3 py-1 rounded-full cursor-pointer hover:bg-blue-200"
+                    className="bg-[#FF8C42]/10 text-[#FF6B00] text-sm px-3 py-1 rounded-full cursor-pointer hover:bg-[#FF6B00]/20"
                   >
                     #{topic}
                   </span>
@@ -220,7 +220,7 @@ const Forum = () => {
 
             {/* Recommended */}
             <div className="bg-white rounded-lg p-6 shadow">
-              <h4 className="text-lg font-semibold text-blue-700 mb-2">
+              <h4 className="text-lg font-semibold text-[#FF6B00] mb-2">
                 Recommended for You
               </h4>
               <p className="text-sm text-gray-500 mb-4">
@@ -238,8 +238,8 @@ const Forum = () => {
                     <button
                       className={`text-xs px-3 py-1 rounded-full font-semibold ${
                         item.progress
-                          ? 'bg-blue-50 text-blue-700'
-                          : 'bg-blue-600 text-white hover:bg-blue-700'
+                          ? 'bg-[#FF8C42]/10 text-[#FF6B00]'
+                          : 'bg-[#FF6B00] text-white hover:bg-[#FF8C42]'
                       }`}
                     >
                       {item.actionText}
@@ -249,9 +249,9 @@ const Forum = () => {
                     {item.description}
                   </p>
                   {item.progress && (
-                    <div className="relative h-2 w-full bg-blue-50 rounded-full">
+                    <div className="relative h-2 w-full bg-[#FF8C42]/20 rounded-full">
                       <div
-                        className="h-2 rounded-full bg-blue-600"
+                        className="h-2 rounded-full bg-[#FF6B00]"
                         style={{ width: `${item.progressValue}%` }}
                       ></div>
                     </div>
@@ -263,21 +263,23 @@ const Forum = () => {
         </div>
       </main>
 
-      {/* ✅ Footer */}
+      {/* Footer */}
       <footer className="w-full bg-white py-12">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Campus Health Connect */}
             <div className="space-y-4">
               <div className="flex items-center space-x-2 text-gray-700">
-                <div className="w-6 h-6 text-gray-700">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <div className="w-6 h-6 text-[#FF6B00]">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" clipRule="evenodd" d="M9.243 3.031a1 1 0 011.536 0L17.771 9.5a1 1 0 01-.707 1.707H3.936a1 1 0 01-.707-1.707L9.243 3.03zM5 16h10V14H5v2zM5 12h10V10H5v2zM5 8h10V6H5v2z"/>
                   </svg>
                 </div>
                 <span className="font-bold text-lg">Campus Health Connect</span>
               </div>
-              <p className="text-sm text-gray-500">Comprehensive health and wellness platform for the entire campus community.</p>
+              <p className="text-sm text-gray-500">
+                Comprehensive health and wellness platform for the entire campus community.
+              </p>
               <div className="flex space-x-4 text-sm text-gray-500">
                 <a href="#" className="hover:underline">Privacy</a>
                 <a href="#" className="hover:underline">Terms</a>
@@ -315,7 +317,7 @@ const Forum = () => {
                 <li>Crisis Line: <span className="font-bold text-gray-700">(555) 987-6543</span></li>
                 <li>Campus Security: <span className="font-bold text-gray-700">(555) 555-0011</span></li>
                 <li className="text-xs text-gray-400">Available 24/7</li>
-                <li><a href="#" className="text-red-500 hover:underline flex items-center mt-2">Emergency Resources →</a></li>
+                <li><a href="#" className="text-[#DC3545] hover:underline flex items-center mt-2">Emergency Resources →</a></li>
               </ul>
             </div>
           </div>
